@@ -65,4 +65,4 @@ min_dfa = dfa.minimized_dfa()
 
 dot_min_dfa = Digraph("min_dfa", format="jpg")
 min_dfa.create_digraph(dot_min_dfa)
-dot_min_dfa.render(filename="dot/min_dfs")
+dot_min_dfa.render(filename="dot/min_dfa")
