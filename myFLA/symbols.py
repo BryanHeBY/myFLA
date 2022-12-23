@@ -1,5 +1,5 @@
-from myFL import Symbol
-from myFL import mySet
+from myFLA import Symbol
+from myFLA import mySet
 
 class Epsilon(Symbol):
     def __init__(self) -> None:

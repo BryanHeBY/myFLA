@@ -1,9 +1,9 @@
 from queue import Queue
 from typing import Any, Dict
 from itertools import product
-from myFL import mySet, Symbol
-from myFL.symbols import eps
-from myFL.state import *
+from myFLA import mySet, Symbol
+from myFLA.symbols import eps
+from myFLA.state import *
 from graphviz import Digraph
 
 

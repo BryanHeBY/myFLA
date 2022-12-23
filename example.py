@@ -1,4 +1,4 @@
-from myFL.FA import *
+from myFLA.FA import *
 from graphviz import Digraph
 
 # 输入 ε-NFA
