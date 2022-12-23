@@ -56,13 +56,13 @@ min_dfa = dfa.minimized_dfa()
 
 # 将自动机输出为graphviz图像
 dot_eps_nfa = Digraph("eps_nfa", format="jpg")
-dot_dfa = Digraph("dfa", format="jpg")
-dot_min_dfa = Digraph("min_dfa", format="jpg")
-
 eps_nfa.create_digraph(dot_eps_nfa)
-dfa.create_digraph(dot_dfa)
-min_dfa.create_digraph(dot_min_dfa)
-
 dot_eps_nfa.render(filename="dot/eps_nfa")
+
+dot_dfa = Digraph("dfa", format="jpg")
+dfa.create_digraph(dot_dfa)
 dot_dfa.render(filename="dot/dfa")
+
+dot_min_dfa = Digraph("min_dfa", format="jpg")
+min_dfa.create_digraph(dot_min_dfa)
 dot_min_dfa.render(filename="dot/min_dfs")
