@@ -46,22 +46,22 @@ delta.add_edges([
     (S[23], S[24], eps)
 ])
 eps_nfa = eps_NFA(Q, Sigma, delta, q0, F)
-
-# ε-NFA转DFA
-dfa = eps_nfa.to_DFA()
-
-# 最小化DFA
-min_dfa = dfa.minimized_dfa()
-
-
 # 将自动机输出为graphviz图像
 dot_eps_nfa = Digraph("eps_nfa", format="jpg")
 eps_nfa.create_digraph(dot_eps_nfa)
 dot_eps_nfa.render(filename="dot/eps_nfa")
 
+
+# ε-NFA转DFA
+dfa = eps_nfa.to_DFA()
+
 dot_dfa = Digraph("dfa", format="jpg")
 dfa.create_digraph(dot_dfa)
 dot_dfa.render(filename="dot/dfa")
+
+
+# 最小化DFA
+min_dfa = dfa.minimized_dfa()
 
 dot_min_dfa = Digraph("min_dfa", format="jpg")
 min_dfa.create_digraph(dot_min_dfa)
